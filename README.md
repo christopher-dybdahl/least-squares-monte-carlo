@@ -25,7 +25,7 @@ It is designed for flexibility, experimentation, and educational use.
 
 - **Black-Scholes Pricing:** Analytical pricing for European options.
 - **Binomial Tree Pricing:** American/European options, with and without discrete dividends. Includes tree visualization.
-- **Monte Carlo simulations:** American option pricing using the Longstaff-Schwartz method, with support for multiple regression basis types.
+- **Monte Carlo Simulations:** American option pricing using the Longstaff-Schwartz method, with support for multiple regression basis types.
 - **Regression Approaches:** Compare polynomial, linear, exponential, trigonometric, Hermite, Legendre, Jacobi, and Laguerre regressions for LSM.
 - **Exercise Time Analysis:** Analyze and plot when early exercise occurs, and how it depends on volatility.
 - **Discrete Dividends:** Price options with discrete dividend payments and visualize the effect.
