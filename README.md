@@ -1,4 +1,4 @@
-# Least Squares Monte Carlo (LSM) Option Pricing Project
+# Least Squares Monte Carlo (LSMC) Option Pricing Project
 
 This project provides a modular Python implementation for pricing American and European options using:
 - Least Squares Monte Carlo (LSM) with various regression approaches
