@@ -4,8 +4,8 @@ A modular Python implementation for pricing American and European options:
 
 - **Longstaff–Schwartz least-squares Monte Carlo** with eight regression
   bases (polynomial, trigonometric, Hermite, Legendre, Jacobi, Laguerre,
-  linear, exponential) and antithetic variates — 10,000 paths, 100 steps in
-  the baseline runs;
+  linear, exponential) and antithetic variates (10,000 paths, 100 steps in
+  the baseline runs);
 - **Binomial trees**, including discrete dividends, as the convergence
   benchmark;
 - **Black–Scholes** analytics (pricing, implied volatility, vega) for the
@@ -20,17 +20,17 @@ Originally built for TIØ4140 at NTNU, with Alexander Dybdahl.
 
 ## Project Structure
 
-- `main.py` — Main script. Use command-line arguments to select which analysis to run.
-- `config.py` — Centralized configuration for all example parameters (stock price, strike, volatility, etc.).
-- `black_scholes.py` — Black-Scholes pricing and implied volatility functions.
-- `binomial_tree.py` — Binomial tree pricing (American/European, discrete dividends, and tree plotting).
-- `simulation.py` — Functions for simulating asset price paths (standard and antithetic variates).
-- `lsm.py` — Longstaff-Schwartz LSM algorithm and regression utilities (polynomial, trigonometric, Hermite, etc.).
-- `analysis.py` — Analysis and plotting functions (exercise time analysis, confidence intervals, etc.).
-- `plots/` — Contains generated plots from simulations and analyses.
-    - `binmoial_tree_11.png` — Example of a binomial tree visualization.
-    - `exercise_times_histogram.png` — Histogram of exercise times for American options.
-    - `percentage_plot.png` — Plot showing percentage of early exercises vs. volatility.
+- `main.py`: Main script. Use command-line arguments to select which analysis to run.
+- `config.py`: Centralized configuration for all example parameters (stock price, strike, volatility, etc.).
+- `black_scholes.py`: Black-Scholes pricing and implied volatility functions.
+- `binomial_tree.py`: Binomial tree pricing (American/European, discrete dividends, and tree plotting).
+- `simulation.py`: Functions for simulating asset price paths (standard and antithetic variates).
+- `lsm.py`: Longstaff-Schwartz LSM algorithm and regression utilities (polynomial, trigonometric, Hermite, etc.).
+- `analysis.py`: Analysis and plotting functions (exercise time analysis, confidence intervals, etc.).
+- `plots/`: Contains generated plots from simulations and analyses.
+    - `binmoial_tree_11.png`: Example of a binomial tree visualization.
+    - `exercise_times_histogram.png`: Histogram of exercise times for American options.
+    - `percentage_plot.png`: Plot showing percentage of early exercises vs. volatility.
 
 ## Features & Analyses
 
@@ -57,13 +57,13 @@ All example parameters (stock price, strike, volatility, etc.) are set in `confi
    python main.py --analysis [analysis]
    ```
    Where `[analysis]` is one of:
-   - `all` — Run all analyses (default)
-   - `binomial` — Binomial tree pricing
-   - `black-scholes` — Black-Scholes pricing
-   - `lsm` — LSM Monte Carlo pricing
-   - `regression` — LSM with different regression approaches
-   - `dividends` — Binomial tree with discrete dividends and plots
-   - `mcdonald` — Recreates the textbook example from McDonald (2014), page 354, using the exact paths and parameters
+   - `all`: Run all analyses (default)
+   - `binomial`: Binomial tree pricing
+   - `black-scholes`: Black-Scholes pricing
+   - `lsm`: LSM Monte Carlo pricing
+   - `regression`: LSM with different regression approaches
+   - `dividends`: Binomial tree with discrete dividends and plots
+   - `mcdonald`: Recreates the textbook example from McDonald (2014), page 354, using the exact paths and parameters
 
    **Examples:**
    ```bash
