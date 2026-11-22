@@ -1,11 +1,22 @@
-# Least Squares Monte Carlo (LSMC) Option Pricing Project
+# American Option Pricing by Least-Squares Monte Carlo
 
-This project provides a modular Python implementation for pricing American and European options using:
-- Least Squares Monte Carlo (LSM) with various regression approaches
-- Binomial tree models (including discrete dividends)
-- Black-Scholes formula
+A modular Python implementation for pricing American and European options:
 
-It is designed for flexibility, experimentation, and educational use.
+- **Longstaff–Schwartz least-squares Monte Carlo** with eight regression
+  bases (polynomial, trigonometric, Hermite, Legendre, Jacobi, Laguerre,
+  linear, exponential) and antithetic variates — 10,000 paths, 100 steps in
+  the baseline runs;
+- **Binomial trees**, including discrete dividends, as the convergence
+  benchmark;
+- **Black–Scholes** analytics (pricing, implied volatility, vega) for the
+  European limit.
+
+Beyond prices, the project maps *when* early exercise happens: exercise-time
+histograms and a sweep of early-exercise frequency across volatilities from
+10% to 100% (see `plots/`). LSM prices are cross-checked against the
+binomial tree and textbook values (McDonald, 2014).
+
+Originally built for TIØ4140 at NTNU, with Alexander Dybdahl.
 
 ## Project Structure
 
